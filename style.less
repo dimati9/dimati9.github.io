@@ -1,244 +1,324 @@
 @import url('https://fonts.googleapis.com/css?family=Oswald:400,700');
 
 * {
-    margin: 0;
-    padding: 0;
+	margin: 0;
+	padding: 0;
 
 }
 
 body {
-    font-family: 'Oswald', sans-serif;
-        position: relative;
-     
+	font-family: 'Oswald', sans-serif;
+	position: relative;
+
+}
+
+.content {
+	margin: 0 auto;
+}
+
+.h2 {
+	display: block;
+	margin-bottom: .5rem;
+	font-family: inherit;
+	font-weight: 500;
+	line-height: 1.2;
+	color: inherit;
+	padding: 50px 0;
 }
 
 .me {
-    padding-top: 150px;
-    display: flex;
-    height: 100vh;
-    background-color: rgba(10,0,0, 0.1);
-   
+	padding-top: 150px;
+	display: flex;
+	height: 100vh;
+	background-color: rgba(10, 0, 0, 0.1);
 
-    img {
-        max-height: 500px;
-   
-    }
+	img {
+		max-height: 500px;
+
+	}
 }
 
 .about {
-    h3 {
-        margin-top: 100px;
-    }
-    h2 {
-        padding-bottom: 50px;
-    }
-    p {
-        font-size: 1.2em;
-    }
-    span {
-        color: darkslategrey;
-    }
-    margin-left: 182px;
-  
-}
-
-#foto {
-             margin-left: 200px;
+	h3 {
+		margin-top: 100px;
+	}
+	h2 {
+		padding-bottom: 50px;
+	}
+	p {
+		font-size: 1.2em;
+	}
+	span {
+		color: darkslategrey;
+	}
 }
 
 .my_jobs {
-    min-height: 100vh;
-    background-color: gold;
-    h2 {
-        padding-top: 80px;
-        padding-left: 50px;
-    }
-    article {
-        padding-left: 150px;
-        h2 {
-            color: dodgerblue;
-        }
-    }
-    summary {
-        outline: none;
-        font-size: 1.5em;
-    }
-    p {
-        font-size: 1.1em;
-    }
-}
-.contacts {
-    display: block;
-    width: 30%;
-    margin: 0 auto;
-}
-.my_contacts {
-    text-align: center;
-     h2 {
-         font-size: 2em;
-         font-weight: 600;
-        padding-top: 80px;
-        padding-left: 50px;
-         padding-bottom: 50px;
-    }
-    p {
-        text-align: left;
-        color: #fff;
-        font-size: 1.5em;
-    }
-    b {
-        color: lightgreen;
-    }
-    padding-left: 50px;
-    height: 100vh;
-    background-color: orchid;
+	min-height: 100vh;
+	background-color: gold;
+	h2 {
+		padding-top: 80px;
+		padding-left: 50px;
+	}
+	article {
+		padding-bottom: 30px;
+		padding-left: 150px;
+		h2 {
+			color: dodgerblue;
+		}
+	}
+	summary {
+		outline: none;
+		font-size: 1.5em;
+	}
+	p {
+		font-size: 1.1em;
+	}
 }
 
+.contacts {
+	display: block;
+	width: 30%;
+	margin: 0 auto;
+}
+
+.my_contacts {
+	h2 {
+		font-size: 2em;
+		font-weight: 600;
+		padding-top: 80px;
+		padding-left: 50px;
+		padding-bottom: 50px;
+	}
+	p {
+		text-align: left;
+		color: #fff;
+		font-size: 1.5em;
+	}
+	b {
+		color: lightgreen;
+	}
+	height: 100vh;
+	background-color: orchid;
+}
 
 .menu {
-    position: fixed;
-    width: 100%;
-    font-size: 1.2em;
-    background-color: #fff;
-    text-align: center;
+	z-index: 5;
+	position: fixed;
+	width: 100%;
+	font-size: 1.2em;
+	background-color: #fff;
+	text-align: center;
 
-    ul {
-        list-style-type: none;
-    }
+	ul {
+		list-style-type: none;
+	}
 
-    li {
-        display: inline-block;
-        padding: 10px;
-    }
-    a {
-        padding-bottom: 6px;
-        border-bottom: 2px solid #000;
-         transition: 0.5s;
-    }
-    a:hover {
-        color: #000;
-        text-decoration: none;
-        padding-bottom: 2px;
-        transition: 0.5s;
-    }
+	li {
+		display: inline-block;
+		padding: 10px;
+	}
+	a {
+		padding-bottom: 6px;
+		border-bottom: 2px solid #000;
+		transition: 0.5s;
+	}
+	a:hover {
+		color: #000;
+		text-decoration: none;
+		padding-bottom: 2px;
+		transition: 0.5s;
+	}
 }
 
 .my_skills {
-    height: 100vh;
-    background-color: lightblue;
+	height: 100vh;
+	background-color: lightblue;
 
-    h2 {
-            padding-top: 100px;
-        padding-left: 50px;
+	h2 {
+		padding-top: 100px;
+		padding-left: 50px;
 
-    }
+	}
 }
 
 .flex-skills {
-    display: flex;
-    justify-content: center;
+	display: flex;
+	justify-content: center;
 
 }
 
 .skills:last-child {
-    border-right: 1px solid #000;
+	border-right: 1px solid #000;
 }
 
 .skills {
-    border: 1px solid #000;
-    border-right: 0px;
-    padding: 30px;
+	border: 1px solid #000;
+	border-right: 0px;
+	padding: 30px;
 
-    h3 {
-        color: orangered;
-    }
+	h3 {
+		color: orangered;
+	}
 
-    p {
-        font-size: 1.1em;
-    }
+	p {
+		font-size: 1.1em;
+	}
 }
 
-
-
 #back-top {
-    position: fixed;
-    bottom: 0px;
-    padding: 0px;
-    left: 50%;
-    margin-left: 500px;
-    z-index: 99991;
+	position: fixed;
+	bottom: 0px;
+	padding: 0px;
+	left: 50%;
+	margin-left: 500px;
+	z-index: 99991;
 }
 
 #up {
-    font-size: 1.3em;
-    color: red;
-    width: 77px;
-    height: 30px;
-    background-color: #fff;
-    opacity: 0.8;
-    display: block;
-    text-decoration: none;
-    -webkit-transition: all linear 0.2s;
-    -moz-transition: all linear 0.2s;
-    -ms-transition: all linear 0.2s;
-    -o-transition: all linear 0.2s;
-    transition: all linear 0.2s;
-    text-align: center;
+	font-size: 1.3em;
+	color: red;
+	width: 77px;
+	height: 30px;
+	background-color: #fff;
+	opacity: 0.8;
+	display: block;
+	text-decoration: none;
+	-webkit-transition: all linear 0.2s;
+	-moz-transition: all linear 0.2s;
+	-ms-transition: all linear 0.2s;
+	-o-transition: all linear 0.2s;
+	transition: all linear 0.2s;
+	text-align: center;
 
 }
 
 #up:hover {
-    height: 70px;
-    background: #663399;
-    opacity: 1;
-    -webkit-transition: all linear 0.2s;
-    -moz-transition: all linear 0.2s;
-    -ms-transition: all linear 0.2s;
-    -o-transition: all linear 0.2s;
-    transition: all linear 0.2s;
-    color: #fff;
+	height: 70px;
+	background: #663399;
+	opacity: 1;
+	-webkit-transition: all linear 0.2s;
+	-moz-transition: all linear 0.2s;
+	-ms-transition: all linear 0.2s;
+	-o-transition: all linear 0.2s;
+	transition: all linear 0.2s;
+	color: #fff;
 }
 
 .foto {
-    display: none;
-    width: 1200px;
-    height: 625px;
-    background-color: burlywood;
-    z-index: 11;
-    position: absolute;
-    top: 10%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+	display: none;
+	width: 1200px;
+	height: 625px;
+	background-color: burlywood;
+	z-index: 11;
+	position: absolute;
+	top: 10%;
+	left: 50%;
+	transform: translate(-50%, -50%);
 
-    img {
-        width: 1200px;
-    }
+	img {
+		width: 1200px;
+	}
 
 }
 
 .mask {
-    position: absolute;
-    display: none;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.5);
-    z-index: 5;
+	position: absolute;
+	display: none;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.5);
+	z-index: 5;
 }
 
 .active {
-    display: block;
+	display: block;
 }
 
 .hide {
-    display: none;
+	display: none;
 }
 
 footer {
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  height: 80px;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	height: 80px;
+	text-align: center;
+}
+
+@media (max-width: 768px) {
+	.flex-skills {
+		flex-direction: column;
+	}
+	.my_skills {
+		height: 100%;
+	}
+	.skills {
+		border-right: 1px solid #000;
+	}
+	.menu {
+		width: 100vw;
+	}
+	.my_jobs article {
+		padding-left: 0;
+	}
+	details {
+		max-width: 100%;
+		overflow: scroll;
+
+	}
+	.content {
+		max-width: 550px;
+	}
+
+	.menu li {
+		font-size: 1.5em;
+	}
+
+	.menu ul {
+		display: flex;
+		justify-content: space-evenly;
+	}
+
+	.flex-box {
+		position: relative;
+	}
+
+	.gallery {
+		position: absolute;
+		top: 90%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+
+	.gallery img {
+		max-height: 50px;
+	}
+}
+
+@media (max-width: 550px) {
+	.gallery {
+		display: flex;
+		top: 66px;
+
+	}
+	.content {
+		max-width: 350px;
+	}
+	.menu li {
+		padding: 0;
+		font-size: 1.3em;
+		width: 40%;
+	}
+	.menu ul {
+		flex-wrap: wrap;
+	}
+	.menu a {
+		border-bottom: none;
+	}
+	
 }

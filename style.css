@@ -2,13 +2,13 @@
   font-family: 'Oswald';
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/oswald/v24/TK3_WkUHHAIjg75cFRf3bXL8LICs1_FvsUZiYA.ttf) format('truetype');
+  src: url(https://fonts.gstatic.com/s/oswald/v29/TK3_WkUHHAIjg75cFRf3bXL8LICs1_FvsUZiYA.ttf) format('truetype');
 }
 @font-face {
   font-family: 'Oswald';
   font-style: normal;
   font-weight: 700;
-  src: url(https://fonts.gstatic.com/s/oswald/v24/TK3_WkUHHAIjg75cFRf3bXL8LICs1xZosUZiYA.ttf) format('truetype');
+  src: url(https://fonts.gstatic.com/s/oswald/v29/TK3_WkUHHAIjg75cFRf3bXL8LICs1xZosUZiYA.ttf) format('truetype');
 }
 * {
   margin: 0;
@@ -18,36 +18,26 @@ body {
   font-family: 'Oswald', sans-serif;
   position: relative;
 }
-.gallery {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  width: 50%;
-}
-.gallery img {
-  height: 200px;
-}
 .content {
-  padding-top: 150px;
-  max-width: 1180px;
-  display: block;
   margin: 0 auto;
 }
-.flex-box {
-  display: flex;
-  justify-content: space-between;
+.h2 {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-family: inherit;
+  font-weight: 500;
+  line-height: 1.2;
+  color: inherit;
+  padding: 50px 0;
 }
 .me {
+  padding-top: 150px;
   display: flex;
   height: 100vh;
   background-color: rgba(10, 0, 0, 0.1);
 }
 .me img {
-  margin: 20px;
-  max-height: 480px;
-}
-.about {
-  width: 50%;
+  max-height: 500px;
 }
 .about h3 {
   margin-top: 100px;
@@ -61,18 +51,16 @@ body {
 .about span {
   color: darkslategrey;
 }
-#foto {
-  margin-left: 200px;
-}
 .my_jobs {
   min-height: 100vh;
-  background-color: #d4c8ff;
+  background-color: gold;
 }
-.my_jobs .my_jobs_all {
-  width: 70%;
+.my_jobs h2 {
+  padding-top: 80px;
+  padding-left: 50px;
 }
 .my_jobs article {
-  padding-bottom: 50px;
+  padding-bottom: 30px;
   padding-left: 150px;
 }
 .my_jobs article h2 {
@@ -85,23 +73,12 @@ body {
 .my_jobs p {
   font-size: 1.1em;
 }
-details a {
-  text-decoration: underline;
-  color: #fff;
-  font-size: 20px;
-}
-details img {
-  max-width: 400px;
-}
 .contacts {
+  display: block;
   width: 30%;
   margin: 0 auto;
-  display: flex;
-  flex-direction: column;
 }
 .my_contacts {
-  text-align: center;
-  padding-left: 50px;
   height: 100vh;
   background-color: orchid;
 }
@@ -121,6 +98,7 @@ details img {
   color: lightgreen;
 }
 .menu {
+  z-index: 5;
   position: fixed;
   width: 100%;
   font-size: 1.2em;
@@ -148,6 +126,10 @@ details img {
 .my_skills {
   height: 100vh;
   background-color: lightblue;
+}
+.my_skills h2 {
+  padding-top: 100px;
+  padding-left: 50px;
 }
 .flex-skills {
   display: flex;
@@ -238,8 +220,69 @@ footer {
   bottom: 0;
   width: 100%;
   height: 80px;
+  text-align: center;
 }
-footer span {
-  color: #fff;
+@media (max-width: 768px) {
+  .flex-skills {
+    flex-direction: column;
+  }
+  .my_skills {
+    height: 100%;
+  }
+  .skills {
+    border-right: 1px solid #000;
+  }
+  .menu {
+    width: 100vw;
+  }
+  .my_jobs article {
+    padding-left: 0;
+  }
+  details {
+    max-width: 100%;
+    overflow: scroll;
+  }
+  .content {
+    max-width: 550px;
+  }
+  .menu li {
+    font-size: 1.5em;
+  }
+  .menu ul {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .flex-box {
+    position: relative;
+  }
+  .gallery {
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .gallery img {
+    max-height: 50px;
+  }
+}
+@media (max-width: 550px) {
+  .gallery {
+    display: flex;
+    top: 66px;
+  }
+  .content {
+    max-width: 350px;
+  }
+  .menu li {
+    padding: 0;
+    font-size: 1.3em;
+    width: 40%;
+  }
+  .menu ul {
+    flex-wrap: wrap;
+  }
+  .menu a {
+    border-bottom: none;
+  }
 }
 /*# sourceMappingURL=style.css.map */
